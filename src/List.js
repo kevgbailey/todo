@@ -1,6 +1,7 @@
 
 import { render } from '@testing-library/react';
 import { useState } from 'react';
+import Input from './Input';
 //the list object is pretty much all the functional components of the app. it has no child components as of now.
 const List = () => {
 const [list,setList] = useState([
@@ -38,22 +39,18 @@ function handleEdit(id){
 
 
     return (  
-<div className = 'mainList'>
-    <div className = 'inputForms'>
-        <input type = "text"  onChange = {handleChange} onSubmit = {handleAdd}/>
-        <button type = "button" onClick = {handleAdd}> Add</button>
-    </div>
-    <ul>
-    {list.map((toDo)=>(
-        <div className = 'list-preview' key = {toDo.id}>
-            <li className = 'listitems'>{toDo.text}</li> 
-            <button id = 'cancelbutton' onClick = {() =>handleDelete(toDo.id)}>X</button>
-            <button id = 'editbutton' onClick = {() => handleEdit(toDo.id)}>Edit</button>
+<div>
+     <List handleChange={handleChange} handleAdd={handleAdd} /><ul>
+        {list.map((toDo) => (
+          <div className='list-preview' key={toDo.id}>
+            <li className='listitems'>{toDo.text}</li>
+            <button id='cancelbutton' onClick={() => handleDelete(toDo.id)}>X</button>
+            <button id='editbutton' onClick={() => handleEdit(toDo.id)}>Edit</button>
 
-        </div>
+          </div>
 
-    ))}
-    </ul>
+        ))}
+      </ul>
     
         </div>
        
