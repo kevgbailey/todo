@@ -1,0 +1,48 @@
+
+body{
+  background-color:#dcf5e9;
+}
+.header {
+  font-family: 'Fragment Mono', monospace;
+  text-align: center;
+  background-color: #c7ebd9;
+  text-shadow: #dafff3 3px 3px;
+  color: #4d635d;
+  border-radius: 10px;
+  margin-right: 10%;
+  margin-left:10%;
+  position:sticky;
+  top: 0;
+  
+}
+h1{
+padding: 10px;
+font-size: 35px;
+
+}
+li{
+  background-color: rgb(228, 255, 246);
+  text-align: center;
+  font-family: 'Fragment Mono', monospace;
+  margin-right: 180px;
+  margin-left:180px;
+}
+input{
+  padding: 9px;
+  border: 2px solid rgb(118, 165, 156);
+  border-radius: 2px;
+  font-size: 15px;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  width: 80%;
+}
+button{
+  padding:9px;
+  background-color:rgb(67, 100, 93);
+  border: 2px solid rgb(118, 165, 156);
+  border-radius: 2px;
+  color: white;
+  font-size: 15px;
+
+}
+
+
